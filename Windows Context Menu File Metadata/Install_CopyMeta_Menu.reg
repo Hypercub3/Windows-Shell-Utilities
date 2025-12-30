@@ -1,0 +1,109 @@
+Windows Registry Editor Version 5.00
+
+; =======================================================
+; SECTION 1: FILES (Apply to all file types)
+; =======================================================
+
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata]
+"MUIVerb"="Copy Metadata"
+"SubCommands"=""
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell]
+
+; 01 Title
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\01Title]
+@="Title"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\01Title\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Title\""
+
+; 02 Media Date
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\02MediaTime]
+@="Media Created Date"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\02MediaTime\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"MediaTime\""
+
+; 03 Dimensions
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\03Dimensions]
+@="Media Dimensions"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\03Dimensions\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Dimensions\""
+
+; 04 Duration
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\04Duration]
+@="Media Duration"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\04Duration\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Duration\""
+
+; Separator logic is automatic in cascading menus, but we order by number
+; 05 Size
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\05Size]
+@="File Size"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\05Size\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Size\""
+
+; 06 Created
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\06Created]
+@="Date Created"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\06Created\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Created\""
+
+; 07 Modified
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\07Modified]
+@="Date Modified"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\07Modified\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Modified\""
+
+; 08 Path
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\08Path]
+@="Full Path"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\08Path\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Path\""
+
+; 09 All
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\09All]
+@="Copy All Info Block"
+[HKEY_CLASSES_ROOT\*\shell\CopyMetadata\shell\09All\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"All\""
+
+
+; =======================================================
+; SECTION 2: FOLDERS (Apply to Directories)
+; =======================================================
+
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata]
+"MUIVerb"="Copy Metadata"
+"SubCommands"=""
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell]
+
+; 01 Size (Recursive)
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\01Size]
+@="Folder Size"
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\01Size\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Size\""
+
+; 02 Created
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\02Created]
+@="Date Created"
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\02Created\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Created\""
+
+; 03 Modified
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\03Modified]
+@="Date Modified"
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\03Modified\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Modified\""
+
+; 04 Path
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\04Path]
+@="Full Path"
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\04Path\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"Path\""
+
+; 05 All
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\05All]
+@="Copy All Info Block"
+[HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata\shell\05All\command]
+@="powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\Scripts\\CopyMeta.ps1\" -Path \"%1\" -Mode \"All\""

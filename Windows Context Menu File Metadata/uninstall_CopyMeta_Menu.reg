@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Remove the menu from all Files
+[-HKEY_CLASSES_ROOT\*\shell\CopyMetadata]
+
+; Remove the menu from all Directories (Folders)
+[-HKEY_CLASSES_ROOT\Directory\shell\CopyMetadata]
