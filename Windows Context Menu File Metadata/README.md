@@ -1,5 +1,5 @@
-&lt;!-- Copy-Meta --&gt;
-&lt;!-- https://github.com/YOUR_USERNAME/Copy-Meta --&gt;
+<!-- &lt;!-- Copy-Meta --&gt;
+&lt;!-- https://github.com/YOUR_USERNAME/Copy-Meta --&gt; -->
 
 # 📋 Copy-Meta  
 **One-click Windows shell extension that copies file & folder metadata to the clipboard.**
