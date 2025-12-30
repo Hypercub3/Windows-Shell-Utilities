@@ -33,30 +33,6 @@ No dialogs, no external apps—just pure Windows Shell + PowerShell.
 ## 🎬 5-second demo
 ![demonstration video](https://github.com/Hypercub3/Windows-Shell-Utilities/blob/42653ef8b452782e1492efc875b764d240518e3a/Windows%20Context%20Menu%20File%20Metadata/Demonstration.mp4)
 
-
----
-
-## 🚀 Quick install
-
-1. **Download** the latest release zip and extract it.  
-   (Or clone the repo: `git clone https://github.com/YOUR_USERNAME/Copy-Meta.git`)
-
-2. **Double-click** `Install_CopyMeta_Menu.reg` → *Yes* to UAC / Registry prompt.
-
-3. **Done.** Right-click any file/folder and look for “Copy Metadata”.
-
-&gt; The PowerShell script is expected at `C:\Scripts\CopyMeta.ps1`.  
-&gt; Change the path in the `.reg` file if you prefer another location.
-
----
-
-## 🧹 Uninstall
-
-Double-click `uninstall_CopyMeta_Menu.reg` and confirm.  
-The menu vanishes instantly—no reboot required.
-
----
-
 ## ⚙️ Configuration
 
 Open `CopyMeta.ps1` and tweak the top line:
