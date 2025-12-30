@@ -31,7 +31,7 @@ No dialogs, no external apps—just pure Windows Shell + PowerShell.
 ---
 
 ## 🎬 Short demo
-![demonstration video](https://github.com/Hypercub3/Windows-Shell-Utilities/blob/42653ef8b452782e1492efc875b764d240518e3a/Windows%20Context%20Menu%20File%20Metadata/Demonstration.mp4)
+![demonstration video](https://raw.githubusercontent.com/Hypercub3/Windows-Shell-Utilities/blob/42653ef8b452782e1492efc875b764d240518e3a/Windows%20Context%20Menu%20File%20Metadata/Demonstration.mp4)
 
 ## ⚙️ Configuration
 
